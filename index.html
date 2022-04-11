@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Primary: "#EA7C69",
+              Secondary: "#9288E0",
+              dark1: "#252836",
+              dark2: "#1F1D2B",
+              light: "#393C49",
+              input: "#2D303E",
+              textlight: "#ABBBC2",
+              textgray: "#E0E6E9",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!--     <p>https://www.figma.com/community/file/944188956363619079  </p>-->
+
+    <div
+      class="bg-dark1 w-full h-full grid"
+      style="grid-template-columns: auto auto auto"
+    >
+      <section
+        class="relative bg-dark2 h-full rounded-r-2xl"
+        style="width: 104px"
+      >
+        <div
+          class="m-6 aspect-square rounded-xl bg-Primary grid justify-center items-center text-white"
+        >
+          <p>home</p>
+        </div>
+        <div class="-mt-2 ml-3 grid grid-rows-6" style="height: 612px">
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">1</p>
+            </div>
+          </div>
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">2</p>
+            </div>
+          </div>
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">3</p>
+            </div>
+          </div>
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">4</p>
+            </div>
+          </div>
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">5</p>
+            </div>
+          </div>
+          <div class="mbtn rounded-l-xl">
+            <div
+              class="absolute left-3 top-3 aspect-square rounded-lg grid items-center justify-center"
+              style="width: 56px"
+            >
+              <p class="block text-2xl">6</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 m-6 aspect-square rounded-xl grid justify-center items-center"
+          style="border-radius: 10px"
+        >
+          <p class="text-Primary">exit</p>
+        </div>
+      </section>
+      <section class="overflow-hidden h-full" style="width: 681px">
+        <div class="mt-6 mx-6">
+          <div
+            class="grid grid-cols-1 mb-6 gap-6 border-b border-light"
+            style="height: 122px"
+          >
+            <div
+              class="grid justify-between items-center"
+              style="height: 65px; grid-template-columns: 164px 220px"
+            >
+              <div
+                class="grid grid-cols-1 gap-1 text-white"
+                style="height: 65px; grid-template-rows: 39px 22px"
+              >
+                <h1>Jaegar Resto</h1>
+                <p class="text-textgray">Tuesday, 2 Feb 2021</p>
+              </div>
+              <div
+                class="h-12 text-white bg-input rounded-lg border border-light grid grid-flow-col"
+              >
+                <div class="w-12 h-12 grid" style="padding: 14px">
+                  <p class="self-center text-xs">X</p>
+                </div>
+                <div
+                  class="h-12 grid"
+                  style="
+                    margin-left: -6px;
+                    padding: 14px;
+                    padding-left: 0px !important;
+                  "
+                >
+                  <p
+                    class="self-center text-textlight whitespace-nowrap text-xs"
+                  >
+                    Search for food, coffe, etc..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ui
+              class="grid gap-8 whitespace-nowrap list-none text-white text-xs"
+              style="
+                height: 33px;
+                grid-template-columns: 66px 72px 37px 37px 61px 48px;
+              "
+            >
+              <li>Hot Dishes</li>
+              <li>Cold Dishes</li>
+              <li>Soup</li>
+              <li>Grill</li>
+              <li>Appetizer</li>
+              <li>Dessert</li>
+            </ui>
+          </div>
+          <div
+            class="grid grid-cols-1 gap-6"
+            style="grid-template-rows: 48px auto"
+          >
+            <div
+              class="grid justify-between items-center"
+              style="grid-template-columns: auto auto"
+            >
+              <div class="text-white" style="width: 129px; height: 28px">
+                Choose Dishes
+              </div>
+              <div
+                class="bg-dark2 h-12 border border-light rounded-lg text-white"
+                style="width: 100px"
+              >
+                <select class="h-full w-full bg-transparent" name="" id="">
+                  <option selected value="">Dine In</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="grid justify-between gap-6"
+              style="grid-template-columns: 192px 192px 192px"
+            >
+              <div class="relative" style="height: 260px">
+                <div
+                  class="absolute bg-dark2 rounded-2xl bottom-0"
+                  style="height: 226px; width: 192px"
+                ></div>
+                <div
+                  class="absolute bg-red-500 rounded-full"
+                  style="height: 132px; width: 132px; left: 30px"
+                ></div>
+                <div
+                  class="absolute bottom-6 left-6 w-36 grid grid-cols-1 gap-2 text-white justify-center"
+                  style="height: 88px; grid-template-rows: 36px 44px"
+                >
+                  <p class="text-sm text-center">
+                    Spicy seasoned seafood noodles
+                  </p>
+                  <div class="grid grid-cols-1 gap-1">
+                    <p class="text-center text-sm">$ 2.29</p>
+                    <p class="text-center text-textlight text-sm">
+                      20 Bowls available
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white" style="height: 260px"></div>
+              <div class="bg-white" style="height: 260px"></div>
+              <div class="bg-white" style="height: 260px"></div>
+              <div class="bg-white" style="height: 260px"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative bg-dark2 h-full rounded-l-lg justify-end"
+        style="width: 409px"
+      >
+        <div class="m-6 grid grid-col-1 gap-6" style="height: 696px">
+          <div
+            class="text-white grid grid-flow-row grid-cols-1 gap-6"
+            style="height: 132px"
+          >
+            <div class="h-7"><h2 class="text-sm">Orders #34562</h2></div>
+            <div
+              class="grid grid-rows-1 grid-flow-col gap-2"
+              style="width: 214px; height: 34px; top: 52px"
+            >
+              <div
+                class="bg-Primary h-full rounded-lg text-xs grid justify-center items-center"
+              >
+                <p>Dine In</p>
+              </div>
+              <div
+                class="h-full rounded-lg text-xs border border-light grid justify-center items-center"
+              >
+                <p>To Go</p>
+              </div>
+              <div
+                class="h-full rounded-lg text-xs border border-light grid justify-center items-center"
+              >
+                <p>Delivery</p>
+              </div>
+            </div>
+            <div class="relative" style="height: 22px">
+              <p class="absolute bottom-0 left-0">Item</p>
+              <p class="absolute bottom-0" style="left: 257px">Qty</p>
+              <p class="absolute bottom-0" style="left: 324px">Price</p>
+            </div>
+          </div>
+          <div
+            class="border-y border-light overflow-hidden"
+            style="height: 454px"
+          >
+            <div class="mt-6 w-full grid grid-cols-1 gap-6">
+              <div
+                class="grid grid-cols-1"
+                style="height: 106px; grid-template-rows: 48px 48px; gap: 10px"
+              >
+                <div class="relative">
+                  <div class="absolute left-0">
+                    <div class="relative">
+                      <div
+                        class="absolute bg-red-500 rounded-full my-1"
+                        style="height: 40px; width: 40px"
+                      ></div>
+                      <div
+                        class="absolute my-1 left-12 overflow-hidden grid"
+                        style="
+                          height: 40px;
+                          width: 140px;
+                          grid-template-rows: 20px;
+                        "
+                      >
+                        <div class="whitespace-nowrap text-white">
+                          Spicy seasoned sea...
+                        </div>
+                        <div class="text-textlight">$ 2.29</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute h-full bg-input border border-light rounded-lg grid justify-center content-center"
+                    style="left: 249px; width: 48px"
+                  >
+                    <p class="text-white align-middle">2</p>
+                  </div>
+                  <div
+                    class="absolute h-full text-white grid justify-center content-center"
+                    style="right: 0px; width: 48px"
+                  >
+                    <p class="text-white align-middle">$ 4.58</p>
+                  </div>
+                </div>
+                <div
+                  class="grid justify-between"
+                  style="grid-template-columns: 297px 48px"
+                >
+                  <div
+                    class="rounded-lg bg-input border border-light overflow-hidden"
+                  >
+                    <p
+                      class="whitespace-nowrap text-textgray text-xs"
+                      style="margin: 14px; height: 20px"
+                    >
+                      Please, just a little bit spicy only.
+                    </p>
+                  </div>
+                  <div class="border border-Primary rounded-lg"></div>
+                </div>
+              </div>
+
+              <div class="bg-white" style="height: 106px"></div>
+              <div class="bg-white" style="height: 106px"></div>
+              <div class="bg-white" style="height: 106px"></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4 text-white" style="height: 62px">
+            <div
+              class="grid justify-between"
+              style="height: 23px; grid-template-columns: auto auto"
+            >
+              <p class="text-textlight">Discount</p>
+              <p>$0</p>
+            </div>
+            <div
+              class="grid justify-between"
+              style="height: 23px; grid-template-columns: auto auto"
+            >
+              <p class="text-textlight">Subtotal</p>
+              <p>$ 21.03</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-6 left-6 right-6 rounded-lg bg-Primary grid justify-center items-center"
+          style="height: 48px"
+        >
+          <p class="text-white">Continue to Payment</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
